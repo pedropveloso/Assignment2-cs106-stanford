@@ -27,7 +27,7 @@ public class Pyramid extends GraphicsProgram {
 	
 	public void run() {
 		int brickNumber = BRICKS_IN_BASE;
-		while (true) {
+		//while (true) {
 			int rowWidth = brickNumber * BRICK_WIDTH;
 			int xRow = (getWidth() - rowWidth) / 2;
 			int rowNumber = BRICKS_IN_BASE - brickNumber + 1;
@@ -38,9 +38,9 @@ public class Pyramid extends GraphicsProgram {
 				new GRect (xBrick, yBrick, BRICK_WIDTH, BRICK_HEIGHT);
 				xBrick += BRICK_WIDTH;
 			}
-			if (brickNumber == 0) break;
-			brickNumber-=1;
-		}
+			//if (brickNumber == 0) break;
+			//brickNumber-=1;
+		//}
 	}
 
 
