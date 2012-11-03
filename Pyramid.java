@@ -31,12 +31,11 @@ public class Pyramid extends GraphicsProgram {
 			int rowWidth = brickNumber * BRICK_WIDTH;
 			int xRow = (getWidth() - rowWidth) / 2;
 			int rowNumber = 1 + BRICKS_IN_BASE - brickNumber;
-			//int yRow = getHeight() - (rowNumber * BRICK_HEIGHT);
-			int yRow = 100;
+			int yRow = getHeight() - (rowNumber * BRICK_HEIGHT);
 			int xBrick = xRow;
 			int yBrick = yRow;
 			//for (int i = 1; i < (brickNumber + 1); i++) {
-				new GRect (xBrick, yBrick, BRICK_WIDTH, BRICK_HEIGHT);
+				add (new GRect (xBrick, yBrick, BRICK_WIDTH, BRICK_HEIGHT));
 				//xBrick += BRICK_WIDTH;
 			//}
 			//if (brickNumber == 0) break;
