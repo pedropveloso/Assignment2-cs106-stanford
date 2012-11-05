@@ -10,7 +10,18 @@ import acm.program.*;
 
 public class Hailstone extends ConsoleProgram {
 	public void run() {
-		/* You fill this in */
+		int n = readInt ("Enter a number: ");
+		int i = 0;
+		while (true) {
+			if (n % 2 == 0) {
+				n /= 2;
+			} else {
+				n = n * 3 + 1;
+			} 
+			if (n==1) break;
+			i++;
+		}
+		println("The process took " + i + "to reach 1");
 	}
 }
 
