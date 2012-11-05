@@ -51,7 +51,7 @@ public class ProgramHierarchy extends GraphicsProgram {
 		double dyDialogueProgram = yBottomRow + (BOX_HEIGHT + dialogueProgram.getHeight() / 2 ) / 2;
 		dialogueProgram.move(dxDialogueProgram, dyDialogueProgram);
 		double x1 = xProgramBox + BOX_WIDTH / 2;
-		double y1 = yProgramBox + BOX_WIDTH;
+		double y1 = yProgramBox + BOX_HEIGHT;
 		double x2 = xGraphicsProgramBox + BOX_WIDTH / 2;
 		double y2 = yBottomRow;
 		double x3 = x1;
