@@ -49,7 +49,7 @@ public class ProgramHierarchy extends GraphicsProgram {
 		GLabel dialogueProgram = new GLabel ("DialogueProgram", 0, 0);
 		double dxDialogueProgram = xDialogueProgramBox + (BOX_WIDTH - dialogueProgram.getWidth()) / 2;
 		double dyDialogueProgram = yBottomRow + (BOX_HEIGHT + dialogueProgram.getHeight() / 2 ) / 2;
-		consoleProgram.move(dxDialogueProgram, dyDialogueProgram);
+		dialogueProgram.move(dxDialogueProgram, dyDialogueProgram);
 		add (programBox);
 		add (graphicsProgramBox);
 		add (consoleProgramBox);
