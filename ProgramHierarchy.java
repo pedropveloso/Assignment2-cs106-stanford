@@ -13,16 +13,16 @@ import java.awt.*;
 public class ProgramHierarchy extends GraphicsProgram {	
 	
 	/*Width of the class boxes*/
-	private static final int BOX_WIDTH = 120;
+	private static final int BOX_WIDTH = 300;
 	
 	/*Height of the class box*/
-	private static final int BOX_HEIGHT = 30;
+	private static final int BOX_HEIGHT = 100;
 	
 	/*Y size of the connecting lines*/
-	private static final int LINE_SIZE = 30;
+	private static final int LINE_SIZE = 50;
 	
 	/*Distance between boxes in the bottom row*/
-	private static final int DISTANCE_BOXES = 10;
+	private static final int DISTANCE_BOXES = 50;
 	
 	public void run() {
 		double xProgramBox = (double) (getWidth()-BOX_WIDTH) / 2;
