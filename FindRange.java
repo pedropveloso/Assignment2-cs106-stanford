@@ -9,6 +9,7 @@
 import acm.program.*;
 
 public class FindRange extends ConsoleProgram {
+	
 	/*This is the sentinel that stops the input*/
 	private static final int sentinel = 0;
 	
