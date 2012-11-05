@@ -13,6 +13,7 @@ public class FindRange extends ConsoleProgram {
 	private static final int sentinel = 0;
 	
 	public void run() {
+		println("This program finds the largest and smallest numbers.");
 		int min = sentinel;
 		int max = sentinel;
 		while (true){
@@ -24,8 +25,15 @@ public class FindRange extends ConsoleProgram {
 			}
 			if (a==sentinel) break;
 		}
+		if (max==sentinel) {
+			println("You must enter at least one number. Thank you.");
+		} else if (min==sentinel) {
+			println("smallest: " + max);
+			println("largest: " + max);
+		} else {
 		println("smallest: " + min);
 		println("largest: " + max);
+		}
 	}
 }
 
