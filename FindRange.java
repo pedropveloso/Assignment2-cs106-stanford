@@ -13,8 +13,8 @@ public class FindRange extends ConsoleProgram {
 	private static final int sentinel = 0;
 	
 	public void run() {
-		int min = 0;
-		int max = 0;
+		int min = sentinel;
+		int max = sentinel;
 		while (true){
 			int a = readInt ("? ");
 			if (a>max) {
