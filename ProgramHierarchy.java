@@ -50,6 +50,17 @@ public class ProgramHierarchy extends GraphicsProgram {
 		double dxDialogueProgram = xDialogueProgramBox + (BOX_WIDTH - dialogueProgram.getWidth()) / 2;
 		double dyDialogueProgram = yBottomRow + (BOX_HEIGHT + dialogueProgram.getHeight() / 2 ) / 2;
 		dialogueProgram.move(dxDialogueProgram, dyDialogueProgram);
+		double x1 = xProgramBox + BOX_WIDTH / 2;
+		double y1 = yProgramBox + BOX_WIDTH;
+		double x2 = xGraphicsProgramBox + BOX_WIDTH / 2;
+		double y2 = yBottomRow;
+		double x3 = x1;
+		double y3 = y2;
+		double x4 = xDialogueProgramBox + BOX_WIDTH / 2;
+		double y4 = y2;
+		GLine line1 = new GLine (x1, y1, x2, y2);
+		GLine line2 = new GLine (x1, y1, x3, y3);
+		GLine line3 = new GLine (x1, y1, x4, y4);
 		add (programBox);
 		add (graphicsProgramBox);
 		add (consoleProgramBox);
@@ -58,9 +69,9 @@ public class ProgramHierarchy extends GraphicsProgram {
 		add (graphicsProgram);
 		add (consoleProgram);
 		add (dialogueProgram);
-		//add (connectingLine1);
-		//add (connectingLine2);
-		//add (connectingLine3);
+		add (line1);
+		add (line2);
+		add (line3);
 		
 	}
 }
