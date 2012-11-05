@@ -36,7 +36,7 @@ public class ProgramHierarchy extends GraphicsProgram {
 		GRect dialogProgramBox = new GRect (xDialogueProgramBox, yBottomRow, BOX_WIDTH, BOX_HEIGHT);
 		GLabel program = new GLabel ("Program", 0, 0);
 		double dxProgram = xProgramBox + (BOX_WIDTH - program.getWidth()) / 2;
-		double dyProgram = yProgramBox + (BOX_HEIGHT) / 2;
+		double dyProgram = yProgramBox + (BOX_HEIGHT + program.getHeight()) / 2;
 		program.move(dxProgram, dyProgram);
 		add (programBox);
 		add (graphicsProgramBox);
