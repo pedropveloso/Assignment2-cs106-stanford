@@ -9,8 +9,23 @@
 import acm.program.*;
 
 public class FindRange extends ConsoleProgram {
+	/*This is the sentinel that stops the input*/
+	private static final int sentinel = 0;
+	
 	public void run() {
-		/* You fill this in */
+		int min = 0;
+		int max = 0;
+		while (true){
+			int a = readInt ("? ");
+			if (a>max) {
+				max=a;
+			}else if (a<min){
+				min=a;
+			}
+			if (max==sentinel) break;
+		}
+		println("smallest: " + min);
+		println("largest: " + max);
 	}
 }
 
