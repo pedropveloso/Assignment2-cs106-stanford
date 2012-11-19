@@ -8,7 +8,7 @@ public class Fibonacci extends ConsoleProgram{
 		while (t1<10000) {
 			int t3 = t1+t2;
 			println(t1);
-			t2=t1;
+			t1=t2;
 			t2=t3;
 			
 		}
